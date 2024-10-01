@@ -35,14 +35,15 @@ jobs:
         needs: test_job
         runs-on: ubuntu-latest
         steps: 
-            - name: Read file
-              run: cat dragon.txt
-
             - name: Upload Dragon text file
               uses: actions/upload-artifact@v4
               with:
                 name: Dragon text file
                 path: dragon.txt
+
+            - name: Read file
+              run: cat dragon.txt
+
 
             - name: Deploy
               run: echo Deploying....
