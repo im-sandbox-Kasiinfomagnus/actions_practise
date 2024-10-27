@@ -1,0 +1,6 @@
+# Assign @username as the owner for all files in the repo
+* @kasiviswanath
+
+# Assign multiple owners to specific files
+README.md @kasiviswanath 
+docs/* @kasiviswanath 
